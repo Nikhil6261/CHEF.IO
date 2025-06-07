@@ -1,13 +1,17 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink , useNavigate } from 'react-router-dom'
 
 
 const Navbar = () => {
+
+  const Navigate = useNavigate()
+  
+
   return (
-    <div className=' w-full  h-[5rem] p-10 bg-blue-200 flex items-center justify-between text-xl uppercase text-black ' >
+    <div className='  CabinetGrotesk-Regular absolute w-[100rem] ml-[15rem] mt-2 rounded-xl drop-shadow-xl bg-Begin  h-[3rem] border-1  p-10  flex items-center justify-between text-xl uppercase text-Snow ' >
 
 
-      <h1> Chef.io  </h1>
+      <h1 onClick={ ()=> Navigate('/home') } className=' cursor-pointer' >  Chef.io  </h1>
 
       <div className="flex items-center justify-center gap-2 ">
 
@@ -22,7 +26,10 @@ const Navbar = () => {
 
       </div>
     </div>
+
+
   )
+
 }
 
 export default Navbar

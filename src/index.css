@@ -6,4 +6,19 @@
   --color-Sand: #d8c9ae;
   --color-Stone: #b2a59b;
   --color-Plum: #331e38;
+--color-Begin  : 			#666666 ;
+
+--color-White :	#fef6e4;
+}
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
 }

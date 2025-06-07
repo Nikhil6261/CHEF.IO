@@ -19,6 +19,7 @@ const RecipeCard = () => {
 
                     return <div key={index} className=' bg-Green w-[22rem] ml-[2.5rem]  h-[35rem] flex flex-col rounded-2xl m-4 ' >
 
+
                         <img src={recipe.img} className='w-[19rem] h-[19rem] items-center  ml-[1.5rem] m-2 rounded-2xl' />
 
                         <div className='  ml-5 mt-2'>
@@ -36,6 +37,7 @@ const RecipeCard = () => {
 <div className=' flex p-3 gap-2'>
 
                         <button onClick={()=> Navigate(`/recipes/create-recipe/${recipe.id}`) } className='bg-mintGreen mt-4 w-[10rem] rounded h-[3rem]'> Update</button>
+                      
                         <button onClick={()=> Navigate(`/recipes/create-recipe/${recipe.id}`) } className='bg-mintGreen mt-4 w-[10rem] rounded h-[3rem]'> Favorites </button>
 
 </div>
