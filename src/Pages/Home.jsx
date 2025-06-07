@@ -1,10 +1,11 @@
 import React, { useContext, useState } from 'react'
 import { recipecontext } from '../../context/ReacipeContext'
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import chef from '../assets/chef_high_quality.png'
 import Donut from '../assets/Donut.png'
 import Icream from '../assets/ice_Cream.png'
+
 
 const Home = () => {
 
@@ -12,7 +13,7 @@ const Home = () => {
 
   const [active, setActive] = useState(true)
 
-const Navigate =useNavigate()
+  const Navigate = useNavigate()
 
   return (
 
@@ -31,7 +32,7 @@ const Navigate =useNavigate()
 
                 <h1 className=' text-Green   flex gap-7 mb-5 dm-serif-text-regular-italic text-7xl text-center uppercase'>
                   Chefs
-                  <span className=' w-[3rem]  flex h-[5rem] '> Un <img className=' w-[5rem]  gap-0  h-[4.5rem] ' src={Icream} alt="" />te </span> </h1>
+                  <span className=' w-[3rem]  flex h-[5rem] '> Un <img className=' w-[5rem]  gap-0  h-[4.5rem] ' src={Icream} alt="" />te. </span> </h1>
 
                 <h1 className=' text-Green  flex gap-7 mb-5 dm-serif-text-regular-italic text-7xl text-center uppercase'>
                   Tastebuds
@@ -51,7 +52,7 @@ const Navigate =useNavigate()
 
               </p>
 
-<button type="button " onClick={ ()=> Navigate('/recipes') } className=' dm-serif-text-regular w-[12rem] h-[4rem] ml-[5rem] text-xl mt-[1.5rem] rounded-xl hover:bg-Stone transition duration-200 hover:scale-95  hover:text-Plum  bg-Begin'> Explore  </button>
+              <button type="button " onClick={() => Navigate('/recipes')} className=' dm-serif-text-regular w-[12rem] h-[4rem] ml-[5rem] text-xl mt-[1.5rem] rounded-xl hover:bg-Stone transition duration-200 hover:scale-95  hover:text-Plum  bg-Begin'> Explore  </button>
 
             </div>
 
