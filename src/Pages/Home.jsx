@@ -2,9 +2,9 @@ import React, { useContext, useState } from 'react'
 import { recipecontext } from '../../context/ReacipeContext'
 import { useNavigate } from 'react-router-dom'
 
-import chef from '../assets/chef_high_quality.png'
-import Donut from '../assets/donut.png'
-import Icream from '../assets/Ice_cream.png'
+import chef from '../../assets/chef_high_quality.png'
+import Donut from '../../assets/donut.png'
+import Icream from '../../assets/Ice_cream.png'
 
 
 const Home = () => {
