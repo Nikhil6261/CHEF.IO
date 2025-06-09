@@ -13,7 +13,7 @@ const Navbar = () => {
 
       <h1 onClick={ ()=> Navigate('/home') } className=' cursor-pointer' >  Chef.io  </h1>
 
-      <div className="flex items-center justify-center gap-2 ">
+      <div className="flex items-center justify-center gap-6 ">
 
         <NavLink className={(e) => (e.isActive ? 'text-red-400' : "")} to="/home"> home </NavLink>
 

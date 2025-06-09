@@ -4,7 +4,6 @@ export const recipecontext = createContext(null)
 
 const ReacipeContext = (props) => {
 
-
   const [DishData, setDishData] = useState([
   
     {
@@ -16,8 +15,8 @@ const ReacipeContext = (props) => {
     desc: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias voluptas, sunt fugit recusandae eos mollitia officia voluptatum ipsum commodi cupiditate sequi ',
   },
   {
-    title: 'chiken',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB87rn87EQhmxevapIa2qTBEAe_WKs_et6Gg&s',
+    title: 'idli',
+    img: 'https://thumbs.dreamstime.com/b/idly-idli-south-indian-main-breakfast-item-which-beautifully-arranged-black-plate-grey-coloured-texture-kitchen-214520284.jpg',
     id:'2sadsd',
     chef: 'aman',
     inst:'chiken , vegetables, fruits, meat, seafood, grains, dairy, spices, herbs, and nuts. ',

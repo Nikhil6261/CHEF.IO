@@ -1,14 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-mintGreen: #a1d1b1;
+  
   --color-Green: #1c2529;
-  --color-Sand: #d8c9ae;
-  --color-Stone: #b2a59b;
   --color-Plum: #331e38;
 --color-Begin  : 			#666666 ;
 
+--color-random : #f3e9d2  ;
+
 --color-White :	#fef6e4;
+
+--color-cardbg :			#f7fbfc ;
+
+--color-btn :					#64406b;
+
+/* --color-cardbtn :			#d6cfe1 ; */
+--color-cardbtnbg :			#2e2e2e ;
+
+
 }
 
 .dm-serif-text-regular {

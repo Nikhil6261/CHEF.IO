@@ -28,12 +28,12 @@ const Create = () => {
 
   return (
 
-    <div className=' w-full h-screen flex-col flex items-center justify-center bg-gray-800'>
+    <div className=' w-full h-screen flex-col flex items-center justify-center  bg-gradient-to-b from-random to-gray-800 '>
 
       <h1 className=' text-Sand text-3xl uppercase mb-8'> make u dish </h1>
 
       <form onSubmit={handleSubmit(submitHandle)}
-        className=' w-[40%] h-[40rem] flex flex-col  items-center justify-evenly  shadow-2xl' >
+        className=' w-[40%] h-[40rem] flex flex-col  items-center justify-evenly text-White bg-gray-800   shadow-2xl' >
 
         <input
           className='w-[32rem]  p-2 text-xl rounded  border-b  text-Stone'

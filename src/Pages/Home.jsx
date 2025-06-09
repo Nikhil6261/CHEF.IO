@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 import chef from '../assets/chef_high_quality.png'
 import Donut from '../assets/donut.png'
-import Icream from '../assets/ice_cream.png'
+import Icream from '../assets/Ice_cream.png'
 
 
 const Home = () => {
