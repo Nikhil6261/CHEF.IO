@@ -36,12 +36,12 @@ const UpdateForm = (props) => {
 
     return (
 
-        <div className=' w-full h-screen flex-col flex items-center justify-center bg-gray-800'>
+        <div className=' w-1/2 mr-5 h-[57rem] rounded-2xl mt-[6.3rem] flex-col flex items-center justify-center bg-gray-800 '>
 
-            <h1 className=' text-Sand text-3xl uppercase mb-8'> make u dish </h1>
+            <h1 className=' text-Sand text-3xl dm-serif-text-regular uppercase mb-8'> update </h1>
 
             <form onSubmit={handleSubmit(submitHandle)}
-                className=' w-[50%] h-[40rem] flex flex-col  items-center justify-evenly  shadow-2xl' >
+                className=' w-[60%] h-[40rem] flex flex-col  items-center justify-evenly  shadow-2xl' >
 
                 <input
                     className='w-[32rem]  p-2 text-xl rounded  border-b  text-Stone'
@@ -78,10 +78,6 @@ const UpdateForm = (props) => {
                     type="text"
                 />
 
-                <textarea className='border w-[32rem] '>
-
-
-                </textarea>
 
                 <div className=' flex '>
 

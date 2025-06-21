@@ -28,17 +28,17 @@ const Create = () => {
 
   return (
 
-    <div className=' w-full h-screen flex-col flex items-center justify-center  bg-gradient-to-b from-random to-gray-800 '>
+    <div className=' w-full h-screen flex-col flex items-center justify-center  bg-gradient-to-bl from-random to-gray-800 '>
 
       <h1 className=' text-Sand text-3xl uppercase mb-8'> make u dish </h1>
 
       <form onSubmit={handleSubmit(submitHandle)}
-        className=' w-[40%] h-[40rem] flex flex-col  items-center justify-evenly text-White bg-gray-800   shadow-2xl' >
+        className=' w-[40%] h-[40rem] flex flex-col rounded  items-center justify-evenly text-White bg-gray-800   shadow-2xl' >
 
         <input
           className='w-[32rem]  p-2 text-xl rounded  border-b  text-Stone'
           {...register('title')}
-          placeholder='Title'
+          placeholder='Title' 
           type="text"
         />
         <input
@@ -70,12 +70,8 @@ const Create = () => {
           type="text"
         />
 
-        <textarea className='border w-[32rem] '>
 
-
-        </textarea>
-
-        <button className=' submit uppercase shadow-md  shadow-gray-700 rounded w-[10rem] h-[3rem] '> submit </button>
+        <button className=' submit uppercase shadow-md  shadow-gray-700 hover:scale-110 rounded w-[10rem] h-[3rem] '> submit </button>
 
       </form>
 

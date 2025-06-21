@@ -6,9 +6,18 @@ import { recipecontext } from '../../context/ReacipeContext'
 
 const RecipeCard = () => {
 
-    const { DishData } = useContext(recipecontext)
+    const { DishData , setFav} = useContext(recipecontext)
 
     const Navigate = useNavigate()
+
+
+function favv(e){
+
+    console.log(e.taget.id);
+
+    setFav()
+    Navigate(`/favorites`)
+}
 
     return (
 
@@ -26,7 +35,7 @@ const RecipeCard = () => {
                         </div>
 
 
-                        <div className=' backdrop-blur-2xl h-[15rem] bg-transparent bg-gradient-to-b from-sky-100 to-sky-800  '>
+                        <div className=' backdrop-blur-2xl h-[15rem] bg-transparent bg-gradient-to-b from-sky-100 to-sky-700  '>
 
                             <div className='   ml-5 mt-2 '>
                                 <div className=' flex items-end gap-2 '>
@@ -46,7 +55,7 @@ const RecipeCard = () => {
 
                                 <button onClick={() => Navigate(`/recipes/create-recipe/${recipe.id}`)} className=' mt-4 w-[10rem] rounded h-[3rem] bg-sky-100 text-Plum  hover:bg-gradient-to-b from-White to-sky-200  hover:scale-105  transition-all ease-in-out duration-500 '> Update</button>
 
-                                <button onClick={() => Navigate(`/recipes/create-recipe/${recipe.id}`)} className='bg-mintGreen mt-4 w-[10rem] border-2 backdrop-blur-2xl bg-emerald-200  rounded h-[3rem]   hover:bg-gradient-to-b from-White to-emerald-200  hover:scale-105  transition-all ease-in-out duration-500 '> Favorites </button>
+                                <button onClick={ favv } className='bg-mintGreen mt-4 w-[10rem] border-2 backdrop-blur-2xl bg-emerald-200  rounded h-[3rem]   hover:bg-gradient-to-b from-White to-emerald-200  hover:scale-105  transition-all ease-in-out duration-500 '> Favorites </button>
 
                             </div>
 

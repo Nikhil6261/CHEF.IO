@@ -6,7 +6,7 @@ import UpdateCard from '../component/UpdateCard'
 
 const Update = () => {
 
-return     <UpdateCard /> 
+return    <UpdateCard /> 
 
 }
 

@@ -4,6 +4,8 @@ export const recipecontext = createContext(null)
 
 const ReacipeContext = (props) => {
 
+  const [fav,setFav] =useState({})
+
   const [DishData, setDishData] = useState([
   
     {
@@ -27,7 +29,7 @@ const ReacipeContext = (props) => {
 
   return (
 
-    <recipecontext.Provider value={{ DishData, setDishData }}>
+    <recipecontext.Provider value={{ DishData, setDishData ,fav , setFav }}>
       {props.children}
     </recipecontext.Provider>
 

@@ -41,13 +41,13 @@ const Home = () => {
               </div>
 
 
-              <p className='dm-serif-text-regular text-Plum text-xl ml-[8rem] w-[50rem] text-center '> Welcome to a place where culinary creativity comes alive.
+              <p className='dm-serif-text-regular text-sky-50 text-xl ml-[8rem] w-[50rem] text-center '> Welcome to a place where culinary creativity comes alive.
                 Here, passionate chefs from around the world come together to share their most
                 treasured recipes — from secret family dishes to bold
 
                 {active != true ? <span  >, modern creations. Whether you’re a home cook, a food lover, or someone
                   simply looking for dinner inspiration, you’ll find something here to spark your appetite. </span>
-                  : <span onClick={() => setActive(!active)} className='More cursor-pointer text-blue-500'>...More </span>}
+                  : <span onClick={() => setActive(!active)} className='More cursor-pointer text-blue-800'> ...More </span>}
 
 
               </p>

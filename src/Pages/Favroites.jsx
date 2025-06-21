@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import ReacipeContext from '../../context/ReacipeContext'
 
 const Favroites = () => {
+
+const {fav} = useContext(ReacipeContext)
+
+console.log(fav);
+
   return (
     <div>
       
